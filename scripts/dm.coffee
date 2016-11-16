@@ -2,7 +2,7 @@ cheerio = require 'cheerio'
 
 module.exports = (robot) ->
     robot.hear /php man (.+)$/, (msg) ->
-        baseUrl = "http://php.net/manual-lookup.php?lang=ja&scope=quickref&pattern="
+        baseUrl = "http://php.net/conferences/index.php#id2016-11-11-1"
         baseUrl += msg.match[1]
         robot.http(baseUrl).get() (err, res, body) ->
             if res.headers.location?
