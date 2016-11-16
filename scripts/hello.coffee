@@ -1,5 +1,6 @@
 cheerio = require 'cheerio'
 
+
 module.exports = (robot) ->
     robot.hear /php man (.+)$/, (msg) ->
         msg.send "‚Ì‚Á‚Æ™‚Ó‚Ÿ‚¤‚ñ‚ÇI"
